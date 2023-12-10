@@ -24,7 +24,7 @@
     <!-- Import CSS: Main Stylesheet -->
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
-
+ 
   <body>
     <div id="particles-js">
       <div class="header">
@@ -42,9 +42,17 @@
           <a aria-label="My Résumé" target="_blank" href="https://drive.google.com/file/d/1guuWxvp0WfU8a_arkkgWnYkXvCGIyW3W/view?usp=sharing">
             <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
           </a>
-          <a aria-label="Send Email" href="mailto:rrbalaji10@gmail.com" target="_blank"
-            ><i class="icon fa fa-envelope"></i
-          ></a>
+
+          <div id="emailModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>My email: balajirajagur@gmail.com</p>
+              <button id="proceedButton">Proceed to Email</button>
+            </div>
+          </div>
+          
+          <a id="emailButton" aria-label="Send Email"><i class="icon fa fa-envelope"></i></a>
+
         </div>
         <div class="header-links">
           <a class="link" href="#about" data-scroll>About Me</a>
@@ -324,5 +332,7 @@
     <script src="./assets/js/google-analytics.js"></script>
     <!-- Import JS: Main Script -->
     <script src="./assets/js/main.js"></script>
+
+    <script src="./assets/js/modal.js"></script>
   </body>
 </html>
