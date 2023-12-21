@@ -5226,40 +5226,69 @@ a img {
     color: #fff
 }
 
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    padding-top: 60px;
+.modal-content {
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text for readability */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    font-family: 'Your website font', sans-serif; /* Your website font */
   }
   
-  .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
+  .modal-header, .modal-footer {
+    background-color: #2C3E50; /* Darker blue to match the website theme */
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px; /* Rounded corners for header */
+    border-top-right-radius: 10px; /* Rounded corners for header */
+  }
+  
+  .modal-body {
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+    background-color: #f8f8f8; /* Lighter shade for the body */
   }
   
   .close {
-    color: #aaa;
+    color: #aaaaaa; /* Light gray for the close button */
     float: right;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 30px; /* Larger close button */
   }
   
-  .close:hover,
-  .close:focus {
-    color: black;
+  .close:hover, .close:focus {
+    color: #000; /* Darker color on hover for close button */
     text-decoration: none;
     cursor: pointer;
   }
+
+  #emailModal {
+    display: none;
+    /* other styles */
+  }
+  
+  #proceedButton {
+    background-color: #3498db; /* Blue shade to match your website's theme */
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 4px; /* Rounded button edges */
+    font-size: 16px; /* Matching font size */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  #proceedButton:hover {
+    background-color: #2980b9; /* Slightly darker shade on hover */
+  }
+  
+  /* Styling the email display */
+  .email-display {
+    font-size: 1rem; /* Choose an appropriate size */
+    margin-bottom: 15px; /* Spacing below the email */
+  }
+  
+  /* Example icon before the email */
+  .email-icon {
+    margin-right: 5px;
+    /* Add specific styles for the email icon */
+  }
+  
+  
   
